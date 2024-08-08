@@ -1,0 +1,9 @@
+# This is a comment
+# Each line is a file pattern followed by one or more owners
+
+# Default owner for everything in the repo
+*       @brainupgrade-in @mightymiths975
+
+# Owner for Python files
+*.py    @brainupgrade-in @Soumi722
+
