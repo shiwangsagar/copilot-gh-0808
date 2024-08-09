@@ -8,11 +8,7 @@ pipeline {
     }
 
     stages {
-        stage('Clone Repository') {
-            steps {
-                git 'https://your-repo-url.git'
-            }
-        }
+
 
         stage('Build Docker Image') {
             steps {
