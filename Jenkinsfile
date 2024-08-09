@@ -21,6 +21,7 @@ pipeline {
         stage('Push Docker Image') {
             steps {
                 script {
+                    sh """
                     // docker.withRegistry('https://index.docker.io/v1/', 'docker-credentials-id') {
                     //     docker.image("${DOCKER_IMAGE}").push()
                     // }
