@@ -18,26 +18,5 @@ pipeline {
             }
         }
 
-        stage('Push Docker Image') {
-            steps {
-                script {
-                    sh """
-                    // docker.withRegistry('https://index.docker.io/v1/', 'docker-credentials-id') {
-                    //     docker.image("${DOCKER_IMAGE}").push()
-                    // }
-                }
-            }
-        }
-
-        stage('Deploy to Kubernetes') {
-            steps {
-                script {
-                    sh """
-                    // kubectl config use-context ${KUBE_CONTEXT}
-                    // kubectl set image deployment/your-deployment-name your-container-name=${DOCKER_IMAGE}:latest -n ${KUBE_NAMESPACE}
-                    """
-                }
-            }
-        }
     }
 }
